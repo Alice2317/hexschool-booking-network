@@ -99,8 +99,8 @@
 
 .left-img {
     width: 100%;
+    @include bg-imgCover('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/online.jpg?raw=true');
 
-    @include bg-imgCover('../assets/images/online.jpg');
     height: 317px;
 
     @include phone() {
