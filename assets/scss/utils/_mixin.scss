@@ -1,0 +1,39 @@
+// bg-img
+@mixin bg-imgCover($url) {
+  background-image: url($url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin mask($url) {
+  -moz-mask: url($url) no-repeat center center;
+  -ms-mask: url($url) no-repeat center center;
+  -o-mask: url($url) no-repeat center center;
+  -webkit-mask: url($url) no-repeat center center;
+  mask: url($url) no-repeat center center;
+  -moz-mask-size: contain;
+  -ms-mask-size: contain;
+  -o-mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+}
+
+// breakpoint
+@mixin web() {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}

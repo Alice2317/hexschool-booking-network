@@ -1,3 +1,181 @@
-.index-title {
-  font-size: 100px;
+.banner-img {
+    @include bg-imgCover('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/13.jpg?raw=true');
+    width: 100%;
+    height: 518px;
+
+    @include phone() {
+        height: 350px;
+    }
+}
+
+// list
+.item {
+    width: calc(16% - 12px);
+    cursor: pointer;
+
+    @include phone() {
+        width: calc(33% - 4px);
+    }
+
+    &:hover {
+        background: $primary;
+        color: $secondary;
+    }
+
+    @for $i from 1 through 5 {
+        &:hover .item-img#{$i} {
+            background: $secondary;
+        }
+    }
+
+
+    @for $i from 1 through 5 {
+        .item-img#{$i} {
+            @include mask('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate0#{$i}.svg');
+
+            height: 80px;
+            background: $primary;
+
+            @include phone() {
+                height: 40px;
+            }
+        }
+    }
+}
+
+// RECENT
+.item3 {
+    width: calc(33% - 12px);
+    cursor: pointer;
+
+    @include phone() {
+        width: 100%;
+    }
+
+    .w-px-24 {
+        max-width: 24px;
+
+        @include phone() {
+            max-width: 20px;
+        }
+    }
+
+    .hover-underline:hover {
+        text-decoration: underline;
+    }
+
+    .circle {
+        margin-right: -25px;
+        margin-bottom: -8px;
+        width: 29px;
+        height: 29px;
+        display: none;
+        background: $secondary;
+        border-radius: 100%;
+    }
+
+
+    .hover-circle:hover .circle {
+        display: inline-block;
+    }
+}
+
+// ONLINE
+.tag {
+    border-left: 4px solid $primary;
+
+    &:hover {
+        border-left-color: $secondary;
+    }
+}
+
+.btn-hover {
+    color: $light;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.left-img {
+    width: 100%;
+
+    @include bg-imgCover('../assets/images/online.jpg');
+    height: 317px;
+
+    @include phone() {
+        height: 158px;
+    }
+}
+
+// albums
+.item4 {
+    width: calc(25% - 24px);
+    cursor: pointer;
+
+    @include phone() {
+        width: 291px;
+        margin: auto;
+    }
+
+    @for $i from 1 through 4 {
+        .pic#{$i} {
+            @include bg-imgCover('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/0#{$i}.jpg?raw=true');
+            height: 274px;
+
+            @include phone() {
+                height: 267px;
+            }
+        }
+    }
+}
+
+.rotate-tag {
+    transform: rotate(354deg) translate(-50%, -50%) !important;
+}
+
+.rotate-right {
+    transform: rotate(-3deg) !important;
+}
+
+.rotate-left {
+    transform: rotate(3deg) !important;
+}
+
+// follow
+.w-px-11 {
+    background: $primary;
+    padding: 8px;
+    font-size: 11px;
+    color: white;
+
+    @include phone() {
+
+        font-size: 14.5px;
+    }
+}
+
+.w1-px-11 {
+    background: $primary;
+    padding: 7px;
+    font-size: 11px;
+    color: white;
+
+    @include phone() {
+        font-size: 14.5px;
+    }
+}
+
+.border-right {
+    @include web() {
+        border-left: 0;
+    }
+
+    @include tablet() {
+        border-left: 0;
+    }
+
+    @include phone() {
+        border-left: 2px solid $primary;
+    }
 }

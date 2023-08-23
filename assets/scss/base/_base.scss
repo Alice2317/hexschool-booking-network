@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    // outline: 1px solid red;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.font-yeseva {
+    font-family: 'Yeseva One', cursive;
+}
+
+.font-serif {
+    font-family: 'Noto Serif TC';
+}
+
+
+.font-sans {
+    font-family: 'Noto Sans TC';
+}
+
+
+.fs-20 {
+    font-size: 20px
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-sm-14 {
+    @include phone() {
+        font-size: 14px;
+    }
+}
+
+.fs-sm-16 {
+    @include phone() {
+        font-size: 16px;
+    }
+}
+
+.fs-sm-18 {
+    @include phone() {
+        font-size: 18px;
+    }
+}
+
+.fs-sm-24 {
+    @include phone() {
+        font-size: 24px;
+    }
+}
+
+.fs-sm-32 {
+    @include phone() {
+        font-size: 32px;
+    }
+}
