@@ -8,38 +8,22 @@
     }
 }
 
-// list
-.item {
-    width: calc(16% - 12px);
-    cursor: pointer;
+//list
+.w-px-80 {
+    width: 80px;
 
     @include phone() {
-        width: calc(33% - 4px);
+
+        width: 40px;
     }
+}
 
-    &:hover {
-        background: $primary;
-        color: $secondary;
-    }
+.h-px-196 {
+    height: 196px;
 
-    @for $i from 1 through 5 {
-        &:hover .item-img#{$i} {
-            background: $secondary;
-        }
-    }
+    @include phone() {
 
-
-    @for $i from 1 through 5 {
-        .item-img#{$i} {
-            @include mask('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate0#{$i}.svg');
-
-            height: 80px;
-            background: $primary;
-
-            @include phone() {
-                height: 40px;
-            }
-        }
+        height: 112px;
     }
 }
 

@@ -13,15 +13,15 @@
   <%- include('./layout/header'); -%>
 
     <main>
-      <div class="container-xxl">
+      <div class="container">
         <!-- banner -->
         <section class="mt-md-32 mt-1 mx-0 mx-md-60l">
           <div class="banner-img text-white position-relative">
             <div class="position-absolute w-100 h-100 d-flex flex-column justify-content-between">
-              <h1 class="py-1 py-md-48 px-40 px-md-48 d-none d-md-block font-yeseva">19 MAY 2023</h1>
-              <h1 class="py-1 py-md-48 px-40 px-md-48 d-block d-md-none font-yeseva">19 MAY <br> 2023</h1>
+              <p class="fs-60 py-1 py-md-48 px-40 px-md-48 d-none d-md-block font-yeseva">19 MAY 2023</p>
+              <p class="fs-32 py-1 py-md-48 px-40 px-md-48 d-block d-md-none font-yeseva">19 MAY <br> 2023</p>
               <div class="text-center p-24">
-                <h5 class="fs-sm-16">隔牆有耳-沒有草東的派對</h5>
+                <p class="fs-24 fs-sm-16">隔牆有耳-沒有草東的派對</p>
                 <p class="d-none d-md-block pt-1 font-sans">
                   你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！<br>
                   帶上啤酒、野餐墊，讓我們在Live House外面一起開場「沒有草東的派對」吧！
@@ -33,40 +33,79 @@
 
         <!-- list -->
         <section class="mt-md-48 mt-24">
-          <ul
+          <div class="row row-cols-3 row-cols-lg-6 g-1 g-lg-4">
+            <div class="col">
+              <div class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate01.svg" alt="cate01" class="img-fluid w-px-80">
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">演出</p>
+            </div>
+          </div>
+            <div class="col">
+              <div class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate02.svg"
+                alt="cate02" class="img-fluid w-px-80">
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">聯誼</p>
+            </div>
+          </div>
+            <div class="col">
+              <div class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate03.svg" alt="cate03" class="img-fluid w-px-80">
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">展覽</p>
+            </div>
+          </div>
+            <div class="col">
+              <div class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate04.svg" alt="cate04" class="img-fluid w-px-80">
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">美食</p>
+            </div>
+          </div>
+            <div class="col">
+              <div class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate05.svg" alt="cate05" class="img-fluid w-px-80">
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">戶外</p>
+            </div>
+          </div>
+            <div class="col">
+              <div class="h-px-196 bg-primary text-secondary d-flex align-items-center justify-content-center flex-column h-100">
+                <p class="lh-base fw-bold fs-48 fs-sm-24">探索<br>更多</p>
+              </div>
+            </div>
+          </div>
+          <!-- <ul
             class="list-unstyled d-flex flex-wrap flex-md-nowrap justify-content-between align-items-stretch m-0 text-center">
             <li class="item border border-2 border-primary px-36 px-md-58 py-20 py-md-35 mt-8 mt-md-0">
               <div class="item-img1"></div>
-              <h5 class="mt-8 mt-md-12 fs-sm-16">演出</h5>
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">演出</p>
             </li>
             <li class="item border border-2 border-primary px-36 px-md-58 py-20 py-md-35 mt-8 mt-md-0">
               <div class="item-img2"></div>
-              <h5 class="mt-8 mt-md-12 fs-sm-16">聯誼</h5>
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">聯誼</p>
             </li>
             <li class="item border border-2 border-primary px-36 px-md-58 py-20 py-md-35 mt-8 mt-md-0">
               <div class="item-img3"></div>
-              <h5 class="mt-8 mt-md-12 fs-sm-16">展覽</h5>
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">展覽</p>
             </li>
             <li class="item border border-2 border-primary px-36 px-md-58 py-20 py-md-35 mt-8 mt-md-0">
               <div class="item-img4"></div>
-              <h5 class="mt-8 mt-md-12 fs-sm-16">美食</h5>
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">美食</p>
             </li>
             <li class="item border border-2 border-primary px-36 px-md-58 py-20 py-md-35 mt-8 mt-md-0">
               <div class="item-img5"></div>
-              <h5 class="mt-8 mt-md-12 fs-sm-16">戶外</h5>
+              <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">戶外</p>
             </li>
             <li
               class="item bg-primary text-secondary d-flex align-content-center justify-content-center flex-column mt-8 mt-md-0">
-              <h3 class="lh-base">探索<br>更多</h3>
+              <p class="lh-base fw-bold fs-48 fs-sm-24">探索<br>更多</p>
             </li>
-          </ul>
+          </ul> -->
         </section>
 
         <!-- RECENT -->
         <section class="mt-md-48 mt-24">
           <div
             class="border border-3 border-primary d-flex mb-24 mb-md-32 py-1 py-md-32 px-12 px-md-32 justify-content-between align-items-center">
-            <h1 class="font-yeseva fs-sm-24">RECENT</h1>
+            <h2 class="fs-64 fs-sm-24 font-yeseva">RECENT</h2>
             <h4 class="fw-bold fs-sm-16">近期活動</h4>
           </div>
         </section>
@@ -238,16 +277,14 @@
         <section class="mt-md-12 mt-8">
           <div
             class="border border-3 border-primary d-flex mb-24 mb-md-32 py-1 py-md-32 px-12 px-md-32 justify-content-between align-items-center">
-            <h1 class="font-yeseva fs-sm-24">ONLINE</h1>
+            <h2 class="fs-64 fs-sm-24 font-yeseva">ONLINE</h2>
             <h4 class="fw-bold fs-sm-16">線上活動</h4>
           </div>
         </section>
 
         <div class="row m-0 p-0 g-0 align-items-end">
           <div class="col-12 col-md-7">
-            <div class="left-img">
-              
-            </div>
+            <div class="left-img"> </div>
           </div>
           <div class="col-12 col-md-5 ps-0 ps-md-24 pt-12 pt-md-0">
             <h4 class="fw-bold">切特居批踢</h4>
@@ -277,7 +314,7 @@
           活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS</h4>
       </div>
 
-      <section class="container-xxl">
+      <section class="container">
         <ul
           class="list-unstyled d-flex flex-column flex-md-row justify-content-between align-items-stretch g-0 m-0 pt-48">
 
@@ -341,7 +378,7 @@
       </div>
 
       <!-- follow -->
-      <div class="container-xxl">
+      <div class="container">
         <section class="row m-0 p-0 py-32 py-md-60 g-0 align-items-stretch">
 
           <div class="col">

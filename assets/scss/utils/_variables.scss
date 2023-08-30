@@ -400,7 +400,7 @@ $stretched-link-z-index: 1 !default;
 //
 // Style p element.
 
-$paragraph-margin-bottom: 1rem !default;
+$paragraph-margin-bottom: 0 !default;
 
 
 // Grid breakpoints
@@ -441,7 +441,14 @@ $container-max-widths: (sm: 540px,
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 1.5rem !default;
+$grid-gutter-width: 1.5rem !default; //24
+$gutters: (0: 0,
+  1: $spacer * .25, //4
+  2: $spacer * .5, //8
+  3: $spacer * .75, //12
+  4: $spacer , //16
+  5: $spacer * 1.5, //24
+);
 $grid-row-columns: 6 !default;
 // Container padding
 
