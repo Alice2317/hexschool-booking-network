@@ -21,19 +21,19 @@
 
 // breakpoint
 @mixin web() {
-  @media screen and (min-width: 960px) {
+  @media screen and (max-width: 1200px) {
     @content;
   }
 }
 
 @mixin tablet() {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 990px) {
     @content;
   }
 }
 
 @mixin phone() {
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }

@@ -1,11 +1,12 @@
 <header class="border-3 border-bottom border-primary">
-    <div class="container-xxl">
-        <nav class="navbar navbar-expand-lg navbar-light py-12 py-md-25">
+    <div class="container">
+
+        <nav class="navbar  navbar-light py-12 py-md-25 flex-nowrap">
             <div class="d-flex justify-content-start">
                 <a class="navbar-brand d-flex align-items-center pe-25 pe-md-48" href="index.html">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
                         alt="logo" class="img-fluid w-px-53">
-                    <h4 class="ps-1 d-none d-md-flex font-yeseva">7TAO</h4>
+                    <h1 class="fs-32 ps-1 d-none d-md-flex font-yeseva">7TAO</h1>
                     <span class="fw-bold ps-4 d-none d-md-flex">活動訂票網</span>
                 </a>
                 <form class="d-flex">
@@ -13,24 +14,46 @@
                     <span
                         class="icofont-search-1 header-search-icon bg-primary text-secondary p-12 p-md-1 text-align-center"></span>
                 </form>
-                <button class="navbar-toggler rounded-1 border-1 ms-25 ms-md-0" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav text-center ms-md-auto mt-1 mt-md-0 font-yeseva">
-                    <li class="nav-item pe-0 pe-md-24">
-                        <a class="nav-link link-dark" aria-current="page" href="shop.html"><i
-                                class="icofont-ui-file pe-4"></i>REGISTER</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link-dark" href="#"><i class="icofont-ui-user pe-4"></i>LOGIN</a>
-                    </li>
-                </ul>
+            <ul class="nav justify-content-end d-none d-lg-flex">
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="shop.html"><i class="icofont-ui-file pe-4"></i>REGISTER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-dark" href="#"><i class="icofont-ui-user pe-4"></i>LOGIN</a>
+                </li>
+            </ul>
+
+            <!-- phone -->
+            <button class="d-inline-block d-lg-none navbar-toggler rounded-1 border-1 ms-25 ms-md-0" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end bg-body" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="shop.html"><i
+                                    class="icofont-ui-file pe-4"></i>REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark" href="#"><i class="icofont-ui-user pe-4"></i>LOGIN</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control font-sans" type="search" placeholder="探索活動" aria-label="Search">
+                        <span
+                            class="icofont-search-1 header-search-icon bg-primary text-secondary p-12 p-md-1 text-align-center"></span>
+                    </form>
+                </div>
             </div>
+
         </nav>
     </div>
 </header>
