@@ -11,10 +11,29 @@
     font-family: 'Noto Sans TC';
 }
 
+.font-up {
+   text-transform: uppercase;
+}
 
 @for $i from 14 through 64 {
     .fs-#{$i} {
         font-size: $i * 1px;
+    }
+}
+
+@for $i from 14 through 64 {
+    @include web() {
+        .fs-lg-#{$i} {
+            font-size: $i * 1px;
+        }
+    }
+}
+
+@for $i from 14 through 64 {
+    @include tablet() {
+        .fs-md-#{$i} {
+            font-size: $i * 1px;
+        }
     }
 }
 

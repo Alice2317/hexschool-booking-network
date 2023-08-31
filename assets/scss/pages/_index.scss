@@ -28,41 +28,44 @@
 }
 
 // RECENT
-.item3 {
-    width: calc(33% - 12px);
-    cursor: pointer;
+
+
+.w-px-24 {
+    max-width: 24px;
 
     @include phone() {
-        width: 100%;
+        max-width: 20px;
     }
+}
 
-    .w-px-24 {
-        max-width: 24px;
+.hover-underline:hover {
+    text-decoration: underline;
+}
 
-        @include phone() {
-            max-width: 20px;
-        }
-    }
+.hover-circle {
+    position: relative;
 
-    .hover-underline:hover {
-        text-decoration: underline;
-    }
-
-    .circle {
-        margin-right: -25px;
-        margin-bottom: -8px;
+    .circle::before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        left: -10px;
         width: 29px;
         height: 29px;
+        z-index: -1;
         display: none;
         background: $secondary;
         border-radius: 100%;
     }
 
 
-    .hover-circle:hover .circle {
+    &:hover .circle::before {
         display: inline-block;
     }
 }
+
+
+
 
 // ONLINE
 .tag {
@@ -93,37 +96,29 @@
 }
 
 // albums
-.item4 {
-    width: calc(25% - 24px);
-    cursor: pointer;
 
-    @include phone() {
-        width: 291px;
-        margin: auto;
-    }
+@for $i from 1 through 4 {
+    .pic#{$i} {
+        @include bg-imgCover('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/0#{$i}.jpg?raw=true');
+        height: 274px;
 
-    @for $i from 1 through 4 {
-        .pic#{$i} {
-            @include bg-imgCover('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/0#{$i}.jpg?raw=true');
-            height: 274px;
-
-            @include phone() {
-                height: 267px;
-            }
+        @include phone() {
+            height: 267px;
         }
     }
 }
+
 
 .rotate-tag {
     transform: rotate(354deg) translate(-50%, -50%) !important;
 }
 
 .rotate-right {
-    transform: rotate(-3deg) !important;
+    transform: rotate(-2deg) !important;
 }
 
 .rotate-left {
-    transform: rotate(3deg) !important;
+    transform: rotate(2deg) !important;
 }
 
 // follow
@@ -151,9 +146,7 @@
 }
 
 .border-right {
-    @include web() {
-        border-left: 0;
-    }
+    border-left: 0;
 
     @include tablet() {
         border-left: 0;
