@@ -7,63 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
   <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
-  <script type="module" crossorigin src="/hexschool-booking-network/assets/main-eb52e50c.js"></script>
-  <link rel="stylesheet" href="/hexschool-booking-network/assets/main-61f330de.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">  <script type="module" crossorigin src="/hexschool-booking-network/assets/main-1e76bf99.js"></script>
+  <link rel="stylesheet" href="/hexschool-booking-network/assets/main-828d83ab.css">
 </head>
 
 <body>
   <header class="border-3 border-bottom border-primary">
+
+<nav class="navbar navbar-expand-lg navbar-light py-12 py-md-25 flex-nowrap">
     <div class="container">
 
-        <nav class="navbar  navbar-light py-12 py-md-25 flex-nowrap">
-            <div class="d-flex justify-content-start">
-                <a class="navbar-brand d-flex align-items-center pe-25 pe-md-48" href="index.html">
-                    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
-                        alt="logo" class="img-fluid w-px-53">
-                    <h1 class="fs-32 ps-1 d-none d-md-flex font-yeseva">7TAO</h1>
-                    <span class="fw-bold ps-4 d-none d-md-flex">活動訂票網</span>
-                </a>
-                <form class="d-flex">
-                    <input class="form-control font-sans" type="search" placeholder="探索活動" aria-label="Search">
-                    <span class="icofont-search-1 header-search-icon bg-primary text-secondary p-12 p-md-1 text-align-center d-flex justify-content-center align-items-center"></span>
-                </form>
+        <div class="d-flex justify-content-start">
+            <a class="navbar-brand d-flex align-items-center pe-25 pe-md-48" href="index.html">
+                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/logo.png?raw=true"
+                    alt="logo" class="img-fluid w-px-53">
+                <h1 class="fs-32 ps-1 d-none d-md-flex font-yeseva">7TAO</h1>
+                <span class="fw-bold ps-4 d-none d-md-flex">活動訂票網</span>
+            </a>
+            <form class="d-flex pe-25 pe-lg-0">
+                <input class="form-control font-sans" type="search" placeholder="探索活動" aria-label="Search">
+                <span
+                    class="icofont-search-1 header-search-icon bg-primary text-secondary p-12 p-md-1 text-align-center d-flex justify-content-center align-items-center"></span>
+            </form>
+        </div>
 
-            </div>
-            <ul class="nav justify-content-end d-none d-lg-flex">
+        <button class="navbar-toggler rounded border-1" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-lg-end collapse1 py-28 py-lg-0"
+            id="navbarSupportedContent">
+
+            <ul class="navbar-nav justify-content-center align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link link-dark" href="shop.html"><i class="icofont-ui-file pe-4"></i>REGISTER</a>
+                    <a class="nav-link link-dark fw-bold" href="shop.html"><i class="icofont-ui-file pe-4"></i>REGISTER</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-dark" href="#"><i class="icofont-ui-user pe-4"></i>LOGIN</a>
+                    <a class="nav-link link-dark fw-bold" href="login.html"><i class="icofont-ui-user pe-4"></i>LOGIN</a>
                 </li>
             </ul>
+        </div>
 
-            <!-- phone -->
-            <button class="d-inline-block d-lg-none navbar-toggler rounded-1 border-1 ms-25 ms-md-0" type="button"
-                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end bg-body" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header justify-content-end">
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link link-dark" href="shop.html"><i
-                                    class="icofont-ui-file pe-4"></i>REGISTER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link-dark" href="#"><i class="icofont-ui-user pe-4"></i>LOGIN</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
     </div>
+</nav>
+
 </header>
     <main>
       <div class="container">
@@ -88,61 +77,61 @@
         <section class="mt-md-48 mt-24">
           <div class="row row-cols-3 row-cols-md-3 row-cols-lg-6 g-2 g-lg-5">
             <div class="col">
-              <div
+              <a href="shop.html"
                 class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
                 <img
                   src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate01.svg"
                   alt="cate01" class="img-fluid w-px-80">
                 <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">演出</p>
-              </div>
+              </a>
             </div>
             <div class="col">
-              <div
+              <a href="shop.html"
                 class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
                 <img
                   src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate02.svg"
                   alt="cate02" class="img-fluid w-px-80">
                 <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">聯誼</p>
-              </div>
+              </a>
             </div>
             <div class="col">
-              <div
+              <a href="shop.html"
                 class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
                 <img
                   src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate03.svg"
                   alt="cate03" class="img-fluid w-px-80">
                 <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">展覽</p>
-              </div>
+              </a>
             </div>
             <div class="col">
-              <div
+              <a href="shop.html"
                 class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
                 <img
                   src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate04.svg"
                   alt="cate04" class="img-fluid w-px-80">
                 <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">美食</p>
-              </div>
+              </a>
             </div>
             <div class="col">
-              <div
+              <a href="shop.html"
                 class="h-px-196 d-flex align-items-center justify-content-center flex-column border border-2 border-primary">
                 <img
                   src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/053bcf3afe88348b79971d2ea8de28f179cba5c5/2023week6/cate05.svg"
                   alt="cate05" class="img-fluid w-px-80">
                 <p class="mt-8 mt-md-12 fs-24 fs-sm-16 fw-bold">戶外</p>
-              </div>
+              </a>
             </div>
             <div class="col">
-              <div
+              <a href="shop.html"
                 class="h-px-196 bg-primary text-secondary d-flex align-items-center justify-content-center flex-column h-100">
                 <p class="lh-base fw-bold fs-48 fs-sm-24">探索<br>更多</p>
-              </div>
+              </a>
             </div>
           </div>
         </section>
 
         <!-- RECENT -->
-        <section class="mt-md-48 mt-24">
+        <section class="mt-md-48 mt-24" data-aos="fade-up">
           <div
             class="border border-3 border-primary d-flex mb-24 mb-md-32 py-1 py-md-32 px-12 px-md-32 justify-content-between align-items-center">
             <h2 class="fs-64 fs-sm-24 font-yeseva">RECENT</h2>
@@ -150,7 +139,7 @@
           </div>
         </section>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3"  data-aos="fade-up" data-aos-duration="1500">
           <div class="col">
             <div class="card border-0 h-100">
               <h3 class="card-header font-yeseva fs-sm-32 fs-lg-36 font-up">
@@ -170,7 +159,7 @@
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
                     alt="sparkler" class="w-px-24 pe-4">社群活動
                 </a>
-                <a class="font-sans fw-bold hover-circle" href="#">
+                <a class="font-sans fw-bold hover-circle" href="search.html">
                   <span class="circle">開賣中</span>
                   <i class="bi bi-chevron-double-right"></i>
                   </i>
@@ -198,7 +187,7 @@
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
                     alt="sparkler" class="w-px-24 pe-4">演出
                 </a>
-                <a class="font-sans fw-bold hover-circle" href="#">
+                <a class="font-sans fw-bold hover-circle" href="search.html">
                   <span class="circle">檢視活動</span>
                   <i class="bi bi-chevron-double-right"></i>
                   </i>
@@ -225,7 +214,7 @@
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
                     alt="sparkler" class="w-px-24 pe-4">聯誼
                 </a>
-                <a class="font-sans fw-bold hover-circle" href="#">
+                <a class="font-sans fw-bold hover-circle" href="search.html">
                   <span class="circle">開賣中</span>
                   <i class="bi bi-chevron-double-right"></i>
                   </i>
@@ -251,7 +240,7 @@
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
                     alt="sparkler" class="w-px-24 pe-4">遊戲競賽
                 </a>
-                <a class="font-sans fw-bold hover-circle" href="#">
+                <a class="font-sans fw-bold hover-circle" href="search.html">
                   <span class="circle">開賣中</span>
                   <i class="bi bi-chevron-double-right"></i>
                   </i>
@@ -278,7 +267,7 @@
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
                     alt="sparkler" class="w-px-24 pe-4">社群活動
                 </a>
-                <a class="font-sans fw-bold hover-circle" href="#">
+                <a class="font-sans fw-bold hover-circle" href="search.html">
                   <span class="circle">開賣中</span>
                   <i class="bi bi-chevron-double-right"></i>
                   </i>
@@ -305,7 +294,7 @@
                     src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
                     alt="sparkler" class="w-px-24 pe-4">展覽
                 </a>
-                <a class="font-sans fw-bold hover-circle" href="#">
+                <a class="font-sans fw-bold hover-circle" href="search.html">
                   <span class="circle">開賣中</span>
                   <i class="bi bi-chevron-double-right"></i>
                   </i>
@@ -316,7 +305,7 @@
         </div>
 
         <!-- ONLINE -->
-        <section class="mt-32 mt-md-60">
+        <section class="mt-32 mt-md-60" data-aos="fade-up" >
           <div
             class="border border-3 border-primary d-flex mb-24 mb-md-32 py-1 py-md-32 px-12 px-md-32 justify-content-between align-items-center">
             <h2 class="fs-64 fs-sm-24 font-yeseva">ONLINE</h2>
@@ -324,7 +313,7 @@
           </div>
         </section>
 
-        <div class="row m-0 p-0 g-0 align-items-end">
+        <div class="row m-0 p-0 g-0 align-items-end" data-aos="fade-up" data-aos-duration="1500">
           <div class="col-12 col-md-12 col-lg-7">
             <div class="left-img"> </div>
           </div>
@@ -341,23 +330,22 @@
               這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。
               該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！</p>
 
-            <button type="button" type="submit"
-              class="btn bg-primary fs-20 btn-hover fw-bold font-sans py-4 w-100">查看活動詳情<i
+            <a class="btn bg-primary fs-20 btn-hover fw-bold font-sans py-4 w-100" href="search.html">查看活動詳情<i
                 class="bi bi-chevron-double-right"></i>
-            </button>
+            </a>
           </div>
         </div>
 
       </div>
 
       <!-- albums -->
-      <div class="albums-lace bg-primary text-secondary overflow-hidden mt-32 mt-md-60">
+      <div class="albums-lace bg-primary text-secondary overflow-hidden mt-32 mt-md-60" data-aos="fade-up">
         <h4 class="fs-sm-16 py-1 py-md-24 text-nowrap">
           活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS</h4>
       </div>
 
       <section class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-48">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-48" data-aos="fade-up" data-aos-duration="1500">
 
           <div class="col">
             <div class="mt-48 mt-lg-0  px-12 px-md-1 py-12 py-md-1 border border-2 border-primary position-relative">
@@ -418,14 +406,14 @@
         </div>
       </section>
 
-      <div class="albums-lace bg-primary text-secondary overflow-hidden mt-32 mt-md-60">
+      <div class="albums-lace bg-primary text-secondary overflow-hidden mt-32 mt-md-60"  data-aos="fade-up">
         <h4 class="fs-sm-16 py-1 py-md-24 text-nowrap">
           集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS・活動集錦・ALBUMS</h4>
       </div>
 
       <!-- follow -->
       <div class="container">
-        <section class="row row-cols-1 row-cols-md-2 m-0 p-0 py-32 py-md-60 g-0 align-items-stretch">
+        <section class="row row-cols-1 row-cols-md-2 m-0 p-0 py-32 py-md-60 g-0 align-items-stretch" data-aos="fade-up" data-aos-duration="1500">
 
           <div class="col">
             <div class="card h-100">
@@ -479,7 +467,7 @@
       </div>
 
       <!-- blockquote -->
-      <section class="text-center border-3 border-top border-primary  py-48 py-md-60">
+      <section class="text-center border-3 border-top border-primary  py-48 py-md-60" data-aos="fade-up" data-aos-duration="1500">
         <h4 class="fw-bold fs-sm-18">此刻打盹，你將做夢；此刻學習，你將圓夢</h4>
         </d>
         <h6 class="fw-bold fs-18 fs-sm-14 mt-12 mt-md-1">
@@ -492,7 +480,7 @@
     <footer class="text-center border-3 border-top border-primary  py-24 py-md-32">
 <h6 class="font-sans">© 7TAO七逃. All Rights Reserved</h6>
 </footer>
-      
-</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script></body>
 
 </html>
