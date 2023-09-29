@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment</title>
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3"></div>
+                    <div class="col-12 col-md-6">
+                        <section class="progress-relative mt-24 mt-md-60">
+
+                            <div class="row progress-position g-0">
+                                <div class="col-auto">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-primary w-px-48" disabled>1
+                                        </button>
+                                        <span class="fw-bold font-serif  mt-4 mt-md-8">訂單確認</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-outline-primary w-px-48"
+                                            disabled>2
+                                        </button>
+                                        <span class="fw-bold font-serif  mt-4 mt-md-8">結帳付款</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-outline-primary w-px-48"
+                                            disabled>3</button>
+                                        <span class="fw-bold font-serif  mt-4 mt-md-8">訂購結果</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        <section class="text-left text-md-center mt-24 mt-md-48">
+                            <h2 class="fs-48 fs-sm-32 ls-2 fw-bold font-serif">返老還童-制服聯誼</h2>
+                            <ul class="list-group list-group-flush mt-24 mt-md-32">
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-top border-primary border-2"
+                                    aria-current="true">
+                                    <p class="font-serif fw-bold">日期</p>
+                                    <p>2023/5/12</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <p class="font-serif fw-bold">票種</p>
+                                    <p>改頭換面票（含大改造）</p>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-bottom border-primary">
+                                    <p class="font-serif fw-bold">票價</p>
+                                    <p>$8000</p>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <form action="payment1.html" class="needs-validation  mt-32 mt-md-48  mb-48 mb-md-60" novalidate>
+                            <div class="text-center">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                                    alt="sparkler" class="img-fluid w-px-31">
+                                <h5 class="mt-16 fw-bold">聯絡人資料</h5>
+                            </div>
+                            <div class="mt-16">
+                                <label for="validationCustom03" class="form-label font-sans">聯絡人姓名</label>
+                                <input type="text" class="form-control font-sans" id="validationCustom03"
+                                    placeholder="請輸入聯絡人名稱" required>
+                                <div class="invalid-feedback">
+                                    請輸入中文姓名
+                                </div>
+                            </div>
+                            <div class="mt-16">
+                                <label for="validationCustom02" class="form-label font-sans">Email</label>
+                                <input type="mail" class="form-control font-sans" id="validationCustom02"
+                                    placeholder="請輸入Email" required>
+                                <div class="invalid-feedback">
+                                    請輸入6-10位英文、數字
+                                </div>
+                            </div>
+                            <div class="mt-16">
+                                <label for="validationCustom03" class="form-label font-sans">手機</label>
+                                <input type="mail" class="form-control font-sans" id="validationCustom03"
+                                    placeholder="請輸入手機號碼" required>
+                                <div class="invalid-feedback">
+                                    請輸入6-10位數字
+                                </div>
+                            </div>
+                            <div class="mt-24 mt-lg-32 text-center">
+                                <button class="btn btn-primary w-75 font-sans fw-bold" type="submit">確認表單資料<i
+                                        class="bi bi-chevron-double-right ms-8"></i></button>
+                            </div>
+                            <div class="mt-16 text-center">
+                                <button class="btn text-info1 w-75 font-sans" type="reset">取消購票</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-12 col-md-3"></div>
+                </div>
+
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.ls-2 {
+    letter-spacing: 2.4px;
+
+    @include phone() {
+        letter-spacing: 1.6px;
+    }
+}
+
+.w-px-48 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+
+    @include phone() {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.w-px-31 {
+    width: 31px;
+}
+
+.progress-relative {
+    position: relative;
+
+    .progress-position::before {
+        content: "";
+        background: $black;
+        width: 85%;
+        height: 1px;
+        display: inline-block;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        z-index: -999;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn-primary {
+        color: $secondary;
+    }
+
+    .btn-outline-primary {
+        background-color: $body-bg;
+    }
+}

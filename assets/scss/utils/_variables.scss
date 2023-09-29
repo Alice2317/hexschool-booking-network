@@ -289,6 +289,7 @@ $theme-colors: ("primary": #030303,
   "secondary": #FBFF22,
   "success": $success,
   "info": #9A9A9A,
+  "info1": #4F4F4F,
   "warning": #9C9E18,
   "danger": #C96464,
   "light": $light,
@@ -354,6 +355,7 @@ $spacers: (0: 0,
   20: 20px,
   24: 24px,
   25: 25px,
+  30: 30px,
   32: 32px,
   35: 35px,
   36: 36px,
@@ -362,7 +364,8 @@ $spacers: (0: 0,
   48: 48px,
   50: 50px,
   58: 58px,
-  60: 60px) !default;
+  60: 60px,
+  150: 150px) !default;
 // scss-docs-end spacer-variables-maps
 
 // Position
@@ -446,7 +449,7 @@ $gutters: (0: 0,
   1: $spacer * .25, //4
   2: $spacer * .5, //8
   3: $spacer * .75, //12
-  4: $spacer , //16
+  4: $spacer, //16
   5: $spacer * 1.5, //24
 );
 $grid-row-columns: 6 !default;
@@ -684,7 +687,7 @@ $table-hover-bg: rgba($black, $table-hover-bg-factor) !default;
 
 $table-border-factor: .1 !default;
 $table-border-width: $border-width !default;
-$table-border-color: var(--#{$prefix}border-color) !default;
+$table-border-color:$primary !default;
 
 $table-striped-order: odd !default;
 $table-striped-columns-order: even !default;
@@ -765,7 +768,7 @@ $btn-box-shadow: inset 0 1px 0 rgba($white, .15),
 0 1px 1px rgba($black, .075) !default;
 $btn-focus-width: $input-btn-focus-width !default;
 $btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
-$btn-disabled-opacity: .65 !default;
+$btn-disabled-opacity: 1 !default;
 $btn-active-box-shadow: inset 0 3px 5px rgba($black, .125) !default;
 
 $btn-link-color: var(--#{$prefix}link-color) !default;
@@ -1113,6 +1116,19 @@ $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3
 $navbar-light-toggler-border-color: rgba($black, 1) !default; //custom
 $navbar-light-brand-color: $navbar-light-active-color !default;
 $navbar-light-brand-hover-color: $navbar-light-active-color !default;
+// scss-docs-end navbar-variables
+
+// scss-docs-start navbar-dark-variables
+$navbar-dark-color: rgba($white, .55) !default;
+$navbar-dark-hover-color: rgba($white, .75) !default;
+$navbar-dark-active-color: $white !default;
+$navbar-dark-disabled-color: rgba($white, .25) !default;
+$navbar-dark-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-border-color: rgba($white, .1) !default;
+$navbar-dark-brand-color: $navbar-dark-active-color !default;
+$navbar-dark-brand-hover-color: $navbar-dark-active-color !default;
+// scss-docs-end navbar-dark-variables
+
 // scss-docs-end navbar-variables
 
 // scss-docs-start navbar-dark-variables
@@ -1474,9 +1490,9 @@ $progress-bar-transition: width .6s ease !default;
 // List group
 
 // scss-docs-start list-group-variables
-$list-group-color: $gray-900 !default;
+$list-group-color: $primary !default;
 $list-group-bg: $body-bg !default;
-$list-group-border-color: rgba($black, .125) !default;
+$list-group-border-color: rgba($primary, 1) !default;
 $list-group-border-width: $border-width !default;
 $list-group-border-radius: $border-radius !default;
 

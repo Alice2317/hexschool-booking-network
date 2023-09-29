@@ -1,0 +1,44 @@
+.img1 {
+    @include bg-imgCover('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/event/09.jpg?raw=true');
+
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;
+    -webkit-aspect-ratio: 16/9;
+    -moz-aspect-ratio: 16/9;
+    -ms-aspect-ratio: 16/9;
+    -o-aspect-ratio: 16/9;
+}
+
+.h-px-100 {
+    transform: rotate(45deg);
+    height: 100px;
+
+    @include phone() {
+        height: 50px;
+    }
+}
+
+.ls-10 {
+    letter-spacing: 3px;
+
+    @include phone() {
+        letter-spacing: 1.6px;
+    }
+}
+
+.w-1 {
+    $btn-width: 115px;
+    width: $btn-width;
+
+    @include tablet() {
+        $btn-width: 80px;
+        width: $btn-width;
+    }
+}
+
+.btn1:hover {
+    color: $secondary;
+}

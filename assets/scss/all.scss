@@ -6,8 +6,8 @@
 @import './utils/mixin';
 
 @import './vendors/icofont/icofont.css';
-
 @import "../../node_modules/bootstrap";
+
 @import './base/base';
 @import './utils/helpers';
 @import './layout/header';
@@ -15,4 +15,5 @@
 
 
 @import './pages/index';
-@import './pages/shop';
+@import './pages/search';
+@import './pages/payment';

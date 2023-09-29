@@ -28,8 +28,6 @@
 }
 
 // RECENT
-
-
 .w-px-24 {
     max-width: 24px;
 
@@ -64,9 +62,6 @@
     }
 }
 
-
-
-
 // ONLINE
 .tag {
     border-left: 4px solid $primary;
@@ -96,7 +91,6 @@
 }
 
 // albums
-
 @for $i from 1 through 4 {
     .pic#{$i} {
         @include bg-imgCover('https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/album/0#{$i}.jpg?raw=true');
@@ -107,7 +101,6 @@
         }
     }
 }
-
 
 .rotate-tag {
     transform: rotate(354deg) translate(-50%, -50%) !important;

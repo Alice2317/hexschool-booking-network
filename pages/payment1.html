@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>payment1</title>
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3"></div>
+                    <div class="col-12 col-md-6">
+                        <section class="progress-relative mt-24 mt-md-60">
+
+                            <div class="row progress-position g-0">
+                                <div class="col-auto">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-primary text-secondary w-px-48" disabled>
+                                            <i class="icofont-verification-check"></i>
+                                        </button>
+                                        <span class="fw-bold font-serif  mt-4 mt-md-8">訂單確認</span>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-primary w-px-48" disabled>2
+                                        </button>
+                                        <span class="fw-bold font-serif  mt-4 mt-md-8">結帳付款</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="d-flex flex-column justify-content-center align-items-center">
+                                        <button type="button" class="btn btn-outline-primary w-px-48"
+                                            disabled>3</button>
+                                        <span class="fw-bold font-serif  mt-4 mt-md-8">訂購結果</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+                        <section class="text-left text-md-center mt-24 mt-md-48">
+                            <h2 class="fs-48 fs-sm-32 ls-2 fw-bold font-serif">返老還童-制服聯誼</h2>
+                            <div class="px-8 py-8 bg-primary fs-14 font-sans mt-16 d-block d-md-none text-center">
+                                <p class="text-secondary">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。<br>若逾期未繳款，系統將取消您的訂單。</p>
+                            </div>
+                            <div class="px-12 py-8 bg-primary fs-14 font-sans mt-16 d-none d-md-block">
+                                <p class="text-secondary">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+                            </div>
+                            <ul class="list-group list-group-flush mt-24 mt-md-32">
+                                <li class="list-group-item d-flex justify-content-between align-items-center border-top border-primary border-2"
+                                    aria-current="true">
+                                    <p class="font-serif fw-bold">訂單編號</p>
+                                    <p>892746123</p>
+                                </li>
+                                <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-bottom border-primary">
+                                    <p class="font-serif fw-bold">票券</p>
+                                    <p>改頭換面票（含大改造）$8000</p>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <form action="payment2.html" class="needs-validation  mt-32 mt-md-48  mb-48 mb-md-60"
+                            novalidate>
+                            <div class="text-center">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                                    alt="sparkler" class="img-fluid w-px-31">
+                                <h5 class="mt-16 fw-bold">結帳資訊</h5>
+                            </div>
+                            <div class="mt-16">
+                                <label for="validationCustom03" class="form-label font-sans">取票資訊
+                                </label>
+                                <input type="text" class="form-control font-sans" id="validationCustom03"
+                                    placeholder="請輸入身分證字號或護照號碼" required>
+                                <div class="invalid-feedback">
+                                    請輸入英文及數字
+                                </div>
+                                <p class="text-info1">請輸入您的 <span class="text-danger">身分證字號</span> 供取票使用，外籍人士請輸入 <span
+                                        class="text-danger">護照號碼</span> </p>
+                            </div>
+                            <div class="mt-16">
+                                <p class="font-sans">付款方式</p>
+                                <div class="form-check">
+                                    <input class="form-check-input font-sans" type="radio" name="exampleRadios"
+                                        id="exampleRadios1" value="option1" checked>
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        信用卡
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input font-sans" type="radio" name="exampleRadios"
+                                        id="exampleRadios2" value="option2">
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        ATM虛擬帳號
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        請選擇一個
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-24 mt-lg-32 text-center">
+                                <button class="btn btn-primary w-75 font-sans fw-bold" type="submit">確認訂單並繳費 $8000<i
+                                        class="bi bi-chevron-double-right ms-8"></i></button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-12 col-md-3"></div>
+                </div>
+
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+</body>
+
+</html>

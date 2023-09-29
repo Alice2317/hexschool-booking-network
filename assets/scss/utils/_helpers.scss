@@ -6,13 +6,20 @@
     font-family: 'Noto Serif TC';
 }
 
-
 .font-sans {
     font-family: 'Noto Sans TC';
 }
 
 .font-up {
-   text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.h-vh-100 {
+    height: calc(100vh - 104px - 88px);
+
+    @include phone() {
+        height: calc(100vh - 64px - 68px);
+    }
 }
 
 @for $i from 14 through 64 {

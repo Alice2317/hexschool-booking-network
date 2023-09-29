@@ -3,6 +3,19 @@
   height: auto;
 }
 
-.nav-link:hover{
-color:$warning !important;
+.nav-link:hover {
+  color: $warning !important;
+}
+
+.collapse1 {
+  background: $body-bg;
+  z-index: 1;
+
+  @include tablet() {
+    border-bottom: 3px solid $primary;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 80px;
+  }
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <%- include('./layout/head'); -%>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <main>
+            <div class="container h-vh-100">
+                <section class="row row-cols-1 row-cols-lg-3 g-0">
+                    <div class="col"></div>
+                    <div class="col">
+                        <form action="index.html" class="h-vh-100 needs-validation" novalidate>
+                            <div class="text-center mt-24 mt-lg-60">
+                                <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week6/sparkler.png?raw=true"
+                                    alt="sparkler" class="img-fluid">
+                                <h5 class="mt-16 fw-bold">會員登入</h5>
+                            </div>
+                            <div class="mt-16">
+                                <label for="validationCustom03" class="form-label font-sans">帳號</label>
+                                <input type="text" class="form-control font-sans" id="validationCustom03"
+                                    placeholder="請輸入帳號" required>
+                                <div class="invalid-feedback">
+                                    請輸入6-10位英文、數字
+                                </div>
+                            </div>
+                            <div class="mt-16">
+                                <label for="validationCustom02" class="form-label font-sans">密碼</label>
+                                <input type="text" class="form-control font-sans" id="validationCustom02"
+                                    placeholder="請輸入密碼" required>
+                                <div class="invalid-feedback">
+                                    請輸入6-10位英文、數字
+                                </div>
+                            </div>
+                            <div class="mt-24 mt-lg-32">
+                                <button class="btn btn-primary w-100 font-sans fw-bold" type="submit">登入<i
+                                        class="bi bi-chevron-double-right ms-8"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col"></div>
+                </section>
+
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+</body>
+
+</html>
